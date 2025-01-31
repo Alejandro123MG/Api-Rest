@@ -1,0 +1,33 @@
+# Petición GET a una API 
+GET https://jsonplaceholder.typicode.com/posts
+Accept: application/json
+
+###
+
+# Petición POST a una API 
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+}
+
+###
+
+# Petición PUT a una API
+PUT https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+}
+
+###
+
+# Petición DELETE a una API
+DELETE https://jsonplaceholder.typicode.com/posts/1
