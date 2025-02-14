@@ -7,19 +7,11 @@
 </head>
 <body>
     <h1>¡Hola, el servidor Express funciona correctamente! 🚀</h1>
-
-    <script>
-        // Petición SIN CORS (debería fallar)
-        fetch("http://localhost:3001/sin-cors")
-            .then(response => response.text())
-            .then(data => console.log("Respuesta sin CORS:", data))
-            .catch(error => console.error("Error en petición sin CORS:", error));
-
-        // Petición CON CORS (debería funcionar)
-        fetch("http://localhost:3001/con-cors")
-            .then(response => response.text())
-            .then(data => console.log("Respuesta con CORS:", data))
-            .catch(error => console.error("Error en petición con CORS:", error));
-    </script>
+<!-- Formulario para enviar un archivo -->
+<form action="http://localhost:3001/prefectos" method="POST" enctype="multipart/form-data">
+    <input type="file" name="archivo" />
+    <button type="submit">Enviar archivo</button>
+</form>
+   
 </body>
 </html>
