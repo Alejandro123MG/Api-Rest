@@ -60,7 +60,7 @@ function verificarToken(req, res, next) {
     if (!req.headers.authorization) {
         return res.status(403).json({ error: 'No tienes permiso para acceder a este recurso' });
     }
-    const token = req.headers.authorization.split(" ")[1]; // Asumiendo formato "Bearer <token>"
+    const token = req.headers.authorization.split(" ")[1]; 
     
     jwt.verify(token, publica, (err, decoded) => {
         if (err) {

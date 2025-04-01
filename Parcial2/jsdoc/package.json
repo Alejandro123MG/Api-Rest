@@ -1,0 +1,21 @@
+{
+  "name": "jsdoc",
+  "version": "1.0.0",
+  "description": "Generador de documentación para el proyecto Api-Rest",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+
+  "keywords": [],
+  "license" : "ISC",
+
+  "dependencies": {
+    "jsd": "^1.1.2",
+    "jsdoc": "^4.0.4"
+  }
+
+
+}
