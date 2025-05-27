@@ -1,0 +1,62 @@
+{
+  "definition": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "API de Futbolistas",
+      "version": "1.0.0",
+      "description": "Documentación de la API de jugadores de futbol",
+      "contact": {
+        "name": "Alejandro Monsivais Guillen #20100239",
+        "email": "alejandromonsivais367@gmail.com"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Servidor de desarrollo"
+      }
+    ],
+    "components": {
+      "schemas": {
+        "Futbolista": {
+          "type": "object",
+          "properties": {
+            "nombre": {
+              "type": "string",
+              "example": "Lionel"
+            },
+            "apellido": {
+              "type": "string",
+              "example": "Messi"
+            },
+            "posicion": {
+              "type": "string",
+              "example": "Delantero"
+            },
+            "dorsal": {
+              "type": "integer",
+              "example": 10
+            },
+            "equipo": {
+              "type": "string",
+              "example": "Inter Miami"
+            },
+            "seleccion": {
+              "type": "string",
+              "example": "Argentina"
+            }
+          },
+          "required": [
+            "nombre",
+            "apellido",
+            "posicion",
+            "dorsal",
+            "equipo",
+            "seleccion"
+          ]
+        }
+      }
+    }
+  },
+  "apis": ["./router/futbolistaRouter.js"]
+}
