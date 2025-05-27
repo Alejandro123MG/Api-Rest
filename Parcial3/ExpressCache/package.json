@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "express": "^5.1.0",
+    "redis": "^5.1.0"
+  },
+  "type": "module"
+}
